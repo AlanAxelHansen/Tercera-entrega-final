@@ -1,0 +1,369 @@
+@media (max-width: 1440px) {
+
+      .content__navbar {
+        left: 60%;
+      }
+
+      .h1 {
+        font-size: 500%;
+        top: 60%; left: 35%;
+        max-width: 500px;
+      }
+
+      .numero_contacto {
+        font-size: 170%;
+        top: 35%; left: 77%;
+      }
+
+      .menu__grid {
+       grid-template-columns: repeat(2, 1fr);
+      } 
+
+      .container {
+        max-width: 700px;
+      }
+
+      .caja__texto {
+        font-size: 150%;
+      }
+
+      .caja__nosotros {
+        height: 100%;
+       }
+      
+      
+      .caja__pipo {
+
+        p {
+          font-size: 120%;
+          bottom: 17rem;
+          }
+      
+        img {
+          top: 6rem;
+          width: 30%;
+          
+          }
+
+      .media_footer {
+        left: 60%;
+        bottom: 25%;
+          }
+      }
+
+      .coso {
+        display: none;
+      }
+
+  }
+
+@media (max-width: 1280px) {
+
+      .content__navbar {
+        left: 60%;
+      }
+
+      .numero_contacto {
+        font-size: 150%;
+        top: 35%; left: 3%;
+      }
+      
+      .caja__nosotros {
+        height: 400px;
+       }
+
+      .caja__pipo {
+
+        p {
+          font-size: 100%;
+          bottom: 14rem;
+          }
+        
+        img {
+          top: 4rem;
+          }
+        }
+        
+
+      .media_footer {
+        left: 60%;
+        bottom: 25%;
+      }
+
+
+    }
+    
+    
+    
+
+  @media (max-width: 1024px) {
+
+      .content__navbar {
+        left: 75%;
+      }
+  
+      .h1 {
+        font-size: 450%;
+        max-width: 450px;
+      }
+  
+      .numero_contacto {
+        font-size: 130%;
+        top: 37%; left: 3%;
+      }
+  
+      .menu__title {
+        font-size: 200%;
+      }
+
+      .card {
+        width: 80%;
+        height: 100%;
+
+        img {
+          width: 100%;
+          height: 200px;
+        }
+
+        h3 {
+          font-size: 150%;
+        }
+
+        p {
+          font-size: 110%;
+        }
+
+        a {
+          font-size: 100%;
+        }
+      }
+      
+      .caja__texto {
+        font-size: 120%;
+      }
+
+      .caja__nosotros {
+        height: 400px;
+       }
+      
+      
+      .caja__pipo {
+
+        p {
+          left: 38%;
+          bottom: 14rem;
+          }
+      
+        img {
+          top: 3rem;
+          width: 35%;
+          
+          }
+      
+      .texto_footer {
+        max-width: 50%;
+        top: 30%;
+        margin-left: 5%;
+      }
+  
+      .media_footer {
+          left: 50%;
+          bottom: 35%;
+      }
+  
+    }
+  }
+
+  @media (max-width: 990px) {
+
+      .content__navbar {
+        left: 60%;
+      }
+  
+      .h1 {
+        top: 65%; left: 37%;
+      }
+  
+      .container {
+          max-width: 660px;
+      }
+  
+      .menu__title {
+        font-size: 200%;
+      }
+
+      .texto_footer {
+        max-width: 90%;
+      }
+
+      .media_footer {
+        display: none;
+      }
+  
+    }
+
+
+  @media (max-width: 768px) {
+
+    .content__navbar {
+      left: 40%;
+    }
+
+    .h1 {
+      font-size: 400%;
+      top: 68%; 
+    }
+
+    .numero_contacto {
+      top: 38%;
+    }
+
+    .caja__texto {
+      font-size: 100%;
+    }
+
+    .caja__nosotros {
+      height: 600px;
+     }
+    
+    
+    .caja__pipo {
+
+      p {
+        font-size: 90%;
+        left: 5%;
+        top: 1rem;
+        max-width: 90%;
+        }
+    
+      img {
+        display: flex;
+        position: relative;
+        top: 30%;
+        left: 30%;
+        
+        }
+
+    .media_footer {
+      display: none;
+    }
+
+   }
+
+  }
+
+  @media (max-width: 425px) {
+
+    .content__navbar {
+      left: -7%;
+      font-size: 70%;
+    }
+
+    .h1 {
+      font-size: 300%;
+      top: 75%; left: 0%;
+    }
+
+    .numero_contacto {
+      display: none;
+    }
+
+    .menu__grid {
+       grid-template-columns: 1fr;
+     } 
+
+    .container {
+        max-width: 300px;
+    }
+
+    .caja__texto {
+      font-size: 100%;
+    }
+
+    .caja__nosotros {
+      height: 900px;
+     }
+    
+    
+    .caja__pipo {
+
+      p {
+        font-size: 90%;
+        left: 5%;
+        top: 1rem;
+        max-width: 90%;
+        }
+    
+    }
+
+    .texto_footer {
+        font-size: 130%;
+        max-width: 90%;
+        top: 10%;
+        margin-left: 5%;
+    }
+
+    .media_footer {
+      display: none;
+    }
+
+   }
+
+
+  @media (max-width: 375px) {
+
+    .content__navbar {
+      left: -5%;
+      font-size: 60%;
+    }
+
+    .numero_contacto {
+      display: none;
+    }
+
+    .texto_footer {
+      font-size: 100%;
+      max-width: 90%;
+    }
+
+    .media_footer {
+      display: none;
+    }
+
+   }
+
+  @media (max-width: 320px) {
+
+    span{
+        display: flex;
+        font-size: 300%;
+        flex-direction: row;
+      }
+
+    .content__navbar {
+        display: none;
+      }
+
+    .h1 {
+      font-size: 250%;
+      text-align: center;
+      top: 65%;
+    }
+
+    .numero_contacto {
+      display: none;
+    }
+
+    .menu__title {
+      font-size: 170%;
+    }
+
+    .container {
+        max-width: 250px;
+    }
+
+    .media_footer {
+      display: none;
+    }
+
+   }

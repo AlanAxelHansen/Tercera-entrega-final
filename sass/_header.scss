@@ -1,0 +1,66 @@
+  .header {
+    background-image: url(../Assets/header.jpg);
+    color: $c-Black;
+    height: 400px;
+  
+    &__content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+  }
+  
+  .h1 {
+    font-size: 600%;
+    text-align: center;
+    position: relative; top: 12rem;
+    font-style: italic;
+  }
+  
+  .numero_contacto {
+    background-color: $c-Black;
+    color: $c-Orange;
+    font-size: 200%;
+    font-style: oblique;
+    position: absolute; top: 21rem;
+    border-radius: 10px;
+  }
+
+  .sections {
+    color: $c-Black;
+    background-color: $c-Orange;
+    border-color: $c-Black;
+    border: 1px solid $c-Black;
+    border-radius: 10px;
+    font-size: 200%;
+    font-style: oblique;
+    position: relative; 
+    top: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    transform: 0.1s;
+    
+    &:hover {
+      transform: scale(0.9);
+      background-color: $c-BlackT;
+    }
+  }
+  
+  .content__navbar {
+    display: flex;
+    position: relative;
+    left: 185%;
+
+      li {
+        margin: 0 15px;
+      }
+
+      a {
+        color: $c-Black;
+        font-weight: bold;
+      }
+      a:hover {
+        color: $c-Orange;
+        font-weight: bold;
+      }
+  }

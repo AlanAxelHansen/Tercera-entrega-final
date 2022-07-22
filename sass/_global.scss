@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+  }
+  
+header{
+    background-image: url(../Assets/header.jpg);
+    height: 25rem;
+    border: 5px solid black;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+footer{
+    background-color: black;
+    height: 30rem;
+}
+ 
+a {
+    text-decoration: none;
+}
+  
+p {
+    line-height: 1.5;
+}
+  
+ul {
+    list-style-type: none;
+}
+  
+span{
+    display: none;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+
+    &__2 {
+    max-width: 1300px;
+    max-height: 500px;
+    margin: 0 auto;
+  }
+
+  }

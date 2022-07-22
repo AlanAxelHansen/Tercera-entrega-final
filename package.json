@@ -1,0 +1,22 @@
+{
+  "name": "sass-pipo",
+  "version": "1.0.0",
+  "description": "Integracion de sass a proyecto",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanAxelHansen/Repositorio-Sass-Rotiseria-a-lo-de-pipo.git"
+  },
+  "author": "Alan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlanAxelHansen/Repositorio-Sass-Rotiseria-a-lo-de-pipo/issues"
+  },
+  "homepage": "https://github.com/AlanAxelHansen/Repositorio-Sass-Rotiseria-a-lo-de-pipo#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
