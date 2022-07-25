@@ -242,48 +242,93 @@ span {
   bottom: 20px; }
 
 .map {
-  display: grid; }
+  display: grid;
+  max-width: 100px; }
   .map h6 {
     color: white;
     font-size: large; }
   .map__redes {
     position: relative;
-    left: 80%; }
+    left: 1400px; }
   .map__pagina {
     position: relative;
-    left: 70%;
-    color: #ffa602;
-    max-width: 5%;
-    bottom: 280%; }
-    .map__pagina a {
-      display: block;
-      background-color: #ffa602;
-      color: black;
-      font-weight: bold; }
+    left: 1200px;
+    bottom: 73%; }
 
 .link-instagram1 {
-  margin: 40px 5px;
-  padding: 10px;
+  margin: 10px 0px;
+  padding: 5px;
   border-radius: 0 5px;
   color: black;
   background-color: #ffa602;
   font-size: 20px;
   font-weight: bold;
   display: flex;
-  max-width: 5%;
-  position: relative; }
+  max-width: 100%;
+  position: relative;
+  transform: 0.2s; }
+  .link-instagram1:hover {
+    transform: scale(115%); }
 
 .link-instagram2 {
-  margin: 40px 5px;
-  padding: 10px;
+  margin: 10px 0px;
+  padding: 5px;
   border-radius: 0 5px;
   color: black;
   background-color: #ffa602;
   font-size: 20px;
   font-weight: bold;
   display: flex;
-  max-width: 5%;
-  position: relative; }
+  max-width: 100%;
+  position: relative;
+  transform: 0.2s; }
+  .link-instagram2:hover {
+    transform: scale(115%); }
+
+.link-cocina {
+  margin: 10px 0px;
+  padding: 5px;
+  border-radius: 0 5px;
+  color: black;
+  background-color: #ffa602;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  transform: 0.2s; }
+  .link-cocina:hover {
+    transform: scale(115%); }
+
+.link-nosotros {
+  margin: 10px 0px;
+  padding: 5px;
+  border-radius: 0 5px;
+  color: black;
+  background-color: #ffa602;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  transform: 0.2s; }
+  .link-nosotros:hover {
+    transform: scale(115%); }
+
+.link-cuenta {
+  margin: 10px 0px;
+  padding: 5px;
+  border-radius: 0 5px;
+  color: black;
+  background-color: #ffa602;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  transform: 0.2s; }
+  .link-cuenta:hover {
+    transform: scale(115%); }
 
 @media (max-width: 1440px) {
   .content__navbar {
@@ -311,11 +356,12 @@ span {
   .caja__pipo img {
     top: 6rem;
     width: 30%; }
-  .caja__pipo .media_footer {
-    left: 60%;
-    bottom: 25%; }
-  .coso {
-    display: none; } }
+  .cuenta__caja {
+    left: 8%; }
+  .map__redes {
+    left: 1200px; }
+  .map__pagina {
+    left: 1000px; } }
 
 @media (max-width: 1280px) {
   .content__navbar {
@@ -331,9 +377,10 @@ span {
     bottom: 14rem; }
   .caja__pipo img {
     top: 4rem; }
-  .media_footer {
-    left: 60%;
-    bottom: 25%; } }
+  .map__redes {
+    left: 1100px; }
+  .map__pagina {
+    left: 900px; } }
 
 @media (max-width: 1024px) {
   .content__navbar {
@@ -369,13 +416,14 @@ span {
   .caja__pipo img {
     top: 3rem;
     width: 35%; }
-  .caja__pipo .texto_footer {
+  .texto_footer {
     max-width: 50%;
     top: 30%;
     margin-left: 5%; }
-  .caja__pipo .media_footer {
-    left: 50%;
-    bottom: 35%; } }
+  .map__redes {
+    left: 800px; }
+  .map__pagina {
+    left: 600px; } }
 
 @media (max-width: 990px) {
   .content__navbar {
@@ -387,10 +435,16 @@ span {
     max-width: 660px; }
   .menu__title {
     font-size: 200%; }
+  .cuenta__caja {
+    left: 5%; }
   .texto_footer {
     max-width: 90%; }
-  .media_footer {
-    display: none; } }
+  .map__redes {
+    left: 600px;
+    top: 200px; }
+  .map__pagina {
+    left: 400px;
+    top: 80px; } }
 
 @media (max-width: 768px) {
   .content__navbar {
@@ -400,6 +454,14 @@ span {
     top: 68%; }
   .numero_contacto {
     top: 38%; }
+  .cuenta__caja {
+    left: -7%;
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+    font-size: 150%; }
+    .cuenta__caja button {
+      font-size: 130%; }
   .caja__texto {
     font-size: 100%; }
   .caja__nosotros {
@@ -413,9 +475,7 @@ span {
     display: flex;
     position: relative;
     top: 30%;
-    left: 30%; }
-  .caja__pipo .media_footer {
-    display: none; } }
+    left: 30%; } }
 
 @media (max-width: 425px) {
   .content__navbar {
@@ -435,6 +495,8 @@ span {
     font-size: 100%; }
   .caja__nosotros {
     height: 900px; }
+  .titulo {
+    font-size: 200%; }
   .caja__pipo p {
     font-size: 90%;
     left: 5%;
@@ -445,8 +507,12 @@ span {
     max-width: 90%;
     top: 10%;
     margin-left: 5%; }
-  .media_footer {
-    display: none; } }
+  .map__redes {
+    left: 100px;
+    top: 130px; }
+  .map__pagina {
+    left: 300px;
+    top: 10px; } }
 
 @media (max-width: 375px) {
   .content__navbar {
@@ -457,8 +523,12 @@ span {
   .texto_footer {
     font-size: 100%;
     max-width: 90%; }
-  .media_footer {
-    display: none; } }
+  .map__redes {
+    left: 50px;
+    top: 160px; }
+  .map__pagina {
+    left: 200px;
+    top: 40px; } }
 
 @media (max-width: 320px) {
   span {
@@ -471,11 +541,17 @@ span {
     font-size: 250%;
     text-align: center;
     top: 65%; }
+  .cuenta__caja {
+    left: 1%;
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    font-size: 100%; }
+    .cuenta__caja button {
+      font-size: 140%; }
   .numero_contacto {
     display: none; }
   .menu__title {
     font-size: 170%; }
   .container {
-    max-width: 250px; }
-  .media_footer {
-    display: none; } }
+    max-width: 250px; } }

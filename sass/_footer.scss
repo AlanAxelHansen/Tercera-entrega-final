@@ -16,6 +16,7 @@
 
   .map {
     display: grid;
+    max-width: 100px;
     
       h6{
         color: white;
@@ -23,43 +24,42 @@
       }
     &__redes {
       position: relative;
-      left: 80%;
+      left: 1400px;
     }
 
     &__pagina {
       position: relative;
-      left: 70%;
-      color: #ffa602;
-      max-width: 5%;
-      bottom: 280%;
-
-      a {
-        display: block;
-        background-color: #ffa602;
-        color: black;
-        font-weight: bold;
-      }
+      left: 1200px;
+      bottom: 73%;
     }
   }
 
   $redes: (
     instagram1: #ffa602,
     instagram2: #ffa602,
+    cocina: #ffa602,
+    nosotros: #ffa602,
+    cuenta: #ffa602,
   );
 
 
 @each $nombre, $colores in $redes {
   .link-#{$nombre} {
-    margin: 40px 5px;
-    padding: 10px;
+    margin: 10px 0px;
+    padding: 5px;
     border-radius: 0 5px;
     color: black;
     background-color: $colores;
     font-size: 20px;
     font-weight: bold;
     display: flex;
-    max-width: 5%;
+    max-width: 100%;
     position: relative;
+    transform: 0.2s;
+
+      &:hover {
+        transform: scale(115%)
+      }
   }
   
 }

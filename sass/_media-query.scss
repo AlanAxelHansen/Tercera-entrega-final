@@ -44,17 +44,22 @@
           width: 30%;
           
           }
+        }
 
-      .media_footer {
-        left: 60%;
-        bottom: 25%;
+        .cuenta__caja {
+          left: 8%;
+        }
+
+        .map {
+
+          &__redes {
+            left: 1200px;
           }
-      }
 
-      .coso {
-        display: none;
-      }
-
+          &__pagina {
+            left: 1000px;
+          }
+        }
   }
 
 @media (max-width: 1280px) {
@@ -85,11 +90,16 @@
         }
         
 
-      .media_footer {
-        left: 60%;
-        bottom: 25%;
-      }
+        .map {
 
+          &__redes {
+            left: 1100px;
+          }
+
+          &__pagina {
+            left: 900px;
+          }
+        }
 
     }
     
@@ -160,19 +170,25 @@
           
           }
       
-      .texto_footer {
-        max-width: 50%;
-        top: 30%;
-        margin-left: 5%;
+        }
+
+        .texto_footer {
+          max-width: 50%;
+          top: 30%;
+          margin-left: 5%;
+        }
+
+        .map {
+
+          &__redes {
+            left: 800px;
+          }
+
+          &__pagina {
+            left: 600px;
+          }
+        }
       }
-  
-      .media_footer {
-          left: 50%;
-          bottom: 35%;
-      }
-  
-    }
-  }
 
   @media (max-width: 990px) {
 
@@ -192,12 +208,25 @@
         font-size: 200%;
       }
 
+      .cuenta__caja {
+        left: 5%;
+      }
+
       .texto_footer {
         max-width: 90%;
       }
 
-      .media_footer {
-        display: none;
+      .map {
+
+        &__redes {
+          left: 600px;
+          top: 200px;
+        }
+
+        &__pagina {
+          left: 400px;
+          top: 80px;
+        }
       }
   
     }
@@ -216,6 +245,18 @@
 
     .numero_contacto {
       top: 38%;
+    }
+
+    .cuenta__caja {
+      left: -7%;
+      width: 350px;
+      height: 300px;
+      padding: 10px;
+      font-size: 150%;
+
+      button {
+        font-size: 130%;
+      }
     }
 
     .caja__texto {
@@ -243,11 +284,6 @@
         left: 30%;
         
         }
-
-    .media_footer {
-      display: none;
-    }
-
    }
 
   }
@@ -284,6 +320,9 @@
       height: 900px;
      }
     
+    .titulo {
+      font-size: 200%;
+    }
     
     .caja__pipo {
 
@@ -303,8 +342,17 @@
         margin-left: 5%;
     }
 
-    .media_footer {
-      display: none;
+    .map {
+
+      &__redes {
+        left: 100px;
+        top: 130px;
+      }
+
+      &__pagina {
+        left: 300px;
+        top: 10px;
+      }
     }
 
    }
@@ -326,8 +374,17 @@
       max-width: 90%;
     }
 
-    .media_footer {
-      display: none;
+    .map {
+
+      &__redes {
+        left: 50px;
+        top: 160px;
+      }
+
+      &__pagina {
+        left: 200px;
+        top: 40px;
+      }
     }
 
    }
@@ -349,7 +406,18 @@
       text-align: center;
       top: 65%;
     }
+    .cuenta__caja {
+      left: 1%;
+      width: 250px;
+      height: 300px;
+      padding: 10px;
+      font-size: 100%;
 
+      button {
+        font-size: 140%;
+      }
+
+    }
     .numero_contacto {
       display: none;
     }
@@ -362,8 +430,5 @@
         max-width: 250px;
     }
 
-    .media_footer {
-      display: none;
-    }
 
    }
