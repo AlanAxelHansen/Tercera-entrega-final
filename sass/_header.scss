@@ -6,8 +6,12 @@
     &__content {
       display: flex;
       justify-content: space-between;
-    }
 
+      &-mobile {
+        display: none;
+      }
+    }
+    
   }
   
   .h1 {

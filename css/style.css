@@ -43,6 +43,8 @@ span {
   .header__content {
     display: flex;
     justify-content: space-between; }
+    .header__content-mobile {
+      display: none; }
 
 .h1 {
   font-size: 600%;
@@ -448,14 +450,40 @@ span {
 
 @media (max-width: 768px) {
   .content__navbar {
-    left: 40%; }
+    left: 0%;
+    display: none; }
+  .header__content-mobile {
+    display: block;
+    position: relative;
+    left: 40%;
+    width: 400px;
+    max-height: 10px; }
+    .header__content-mobile:hover > ul {
+      display: block; }
+    .header__content-mobile i {
+      font-size: 35px; }
+    .header__content-mobile ul {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 80px;
+      width: 100%;
+      background-color: #80808080; }
+      .header__content-mobile ul li {
+        padding: 20px 0;
+        text-align: center; }
+        .header__content-mobile ul li a {
+          color: #fec171;
+          font-weight: bold; }
+        .header__content-mobile ul li:nth-child(even) {
+          background-color: rgba(8, 8, 8, 0.8); }
   .h1 {
     font-size: 400%;
-    top: 68%; }
+    top: 70%; }
   .numero_contacto {
     top: 38%; }
   .cuenta__caja {
-    left: -7%;
+    left: 25%;
     width: 350px;
     height: 300px;
     padding: 10px;
@@ -481,6 +509,31 @@ span {
   .content__navbar {
     left: -7%;
     font-size: 70%; }
+  .header__content-mobile {
+    display: block;
+    position: relative;
+    left: 3%;
+    width: 300px;
+    max-height: 10px; }
+    .header__content-mobile:hover > ul {
+      display: block; }
+    .header__content-mobile i {
+      font-size: 35px; }
+    .header__content-mobile ul {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 80px;
+      width: 100%;
+      background-color: #80808080; }
+      .header__content-mobile ul li {
+        padding: 20px 0;
+        text-align: center; }
+        .header__content-mobile ul li a {
+          color: #fec171;
+          font-weight: bold; }
+        .header__content-mobile ul li:nth-child(even) {
+          background-color: rgba(8, 8, 8, 0.8); }
   .h1 {
     font-size: 300%;
     top: 75%;
@@ -491,10 +544,13 @@ span {
     grid-template-columns: 1fr; }
   .container {
     max-width: 300px; }
+  .container__2 {
+    max-height: 620px; }
   .caja__texto {
     font-size: 100%; }
   .caja__nosotros {
-    height: 900px; }
+    height: 900px;
+    width: 800px; }
   .titulo {
     font-size: 200%; }
   .caja__pipo p {
@@ -502,6 +558,8 @@ span {
     left: 5%;
     top: 1rem;
     max-width: 90%; }
+  .cuenta__caja {
+    left: -7%; }
   .texto_footer {
     font-size: 130%;
     max-width: 90%;
@@ -531,12 +589,35 @@ span {
     top: 40px; } }
 
 @media (max-width: 320px) {
-  span {
-    display: flex;
-    font-size: 300%;
-    flex-direction: row; }
+  .container__2 {
+    max-height: 660px; }
   .content__navbar {
     display: none; }
+  .header__content-mobile {
+    display: block;
+    position: relative;
+    left: 3%;
+    width: 200px;
+    max-height: 10px; }
+    .header__content-mobile:hover > ul {
+      display: block; }
+    .header__content-mobile i {
+      font-size: 35px; }
+    .header__content-mobile ul {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 80px;
+      width: 100%;
+      background-color: #80808080; }
+      .header__content-mobile ul li {
+        padding: 20px 0;
+        text-align: center; }
+        .header__content-mobile ul li a {
+          color: #fec171;
+          font-weight: bold; }
+        .header__content-mobile ul li:nth-child(even) {
+          background-color: rgba(8, 8, 8, 0.8); }
   .h1 {
     font-size: 250%;
     text-align: center;

@@ -235,12 +235,52 @@
   @media (max-width: 768px) {
 
     .content__navbar {
-      left: 40%;
+      left: 0%;
+      display: none;
     }
 
+    .header__content-mobile {
+      display: block;
+      position: relative;
+      left: 40%;
+      width: 400px;
+      max-height: 10px;
+      
+        &:hover > ul {
+          display: block;
+        }
+  
+        i {
+          font-size: 35px;
+        }
+  
+        ul {
+          display: none;
+          position: absolute;
+          right: 0;
+          top: 80px;
+          width: 100%;
+          background-color: $c-Grey;
+  
+          li {
+            padding: 20px 0;
+            text-align: center;
+  
+            a {
+              color: $c-Orange3;
+              font-weight: bold;
+            }
+  
+            &:nth-child(even) {
+              background-color: lighten($c-BlackT, 3%);
+            }
+         }
+    }
+  }
     .h1 {
       font-size: 400%;
-      top: 68%; 
+      top: 70%;
+      
     }
 
     .numero_contacto {
@@ -248,7 +288,7 @@
     }
 
     .cuenta__caja {
-      left: -7%;
+      left: 25%;
       width: 350px;
       height: 300px;
       padding: 10px;
@@ -287,52 +327,100 @@
    }
 
   }
-
+ 
   @media (max-width: 425px) {
 
+    
     .content__navbar {
       left: -7%;
       font-size: 70%;
     }
-
-    .h1 {
-      font-size: 300%;
-      top: 75%; left: 0%;
-    }
-
-    .numero_contacto {
-      display: none;
-    }
-
-    .menu__grid {
-       grid-template-columns: 1fr;
-     } 
-
-    .container {
+    
+    .header__content-mobile {
+      display: block;
+      position: relative;
+      left: 3%;
+      width: 300px;
+      max-height: 10px;
+      
+      &:hover > ul {
+        display: block;
+      }
+      
+      i {
+        font-size: 35px;
+      }
+  
+        ul {
+          display: none;
+          position: absolute;
+          right: 0;
+          top: 80px;
+          width: 100%;
+          background-color: $c-Grey;
+          
+          li {
+            padding: 20px 0;
+            text-align: center;
+            
+            a {
+              color: $c-Orange3;
+              font-weight: bold;
+            }
+            
+            &:nth-child(even) {
+              background-color: lighten($c-BlackT, 3%);
+            }
+          }
+        }
+      }
+      .h1 {
+        font-size: 300%;
+        top: 75%; left: 0%;
+      }
+      
+      .numero_contacto {
+        display: none;
+      }
+      
+      .menu__grid {
+        grid-template-columns: 1fr;
+      } 
+      
+      .container {
         max-width: 300px;
-    }
+      }
+      
+      .container__2 {
+        max-height: 620px;
+      }
 
-    .caja__texto {
-      font-size: 100%;
-    }
+      .caja__texto {
+        font-size: 100%;
+      }
 
-    .caja__nosotros {
-      height: 900px;
-     }
+      .caja__nosotros {
+        height: 900px;
+        width: 800px;
+      }
     
-    .titulo {
-      font-size: 200%;
-    }
+      .titulo {
+        font-size: 200%;
+      }
     
-    .caja__pipo {
+      .caja__pipo {
 
-      p {
-        font-size: 90%;
-        left: 5%;
-        top: 1rem;
-        max-width: 90%;
+        p {
+          font-size: 90%;
+          left: 5%;
+          top: 1rem;
+          max-width: 90%;
         }
     
+      }
+
+    .cuenta__caja{
+      left: -7%;
     }
 
     .texto_footer {
@@ -356,7 +444,7 @@
     }
 
    }
-
+ 
 
   @media (max-width: 375px) {
 
@@ -390,16 +478,53 @@
    }
 
   @media (max-width: 320px) {
-
-    span{
-        display: flex;
-        font-size: 300%;
-        flex-direction: row;
-      }
+    
+    .container__2 {
+      max-height: 660px;
+    }
 
     .content__navbar {
         display: none;
       }
+
+      .header__content-mobile {
+        display: block;
+        position: relative;
+        left: 3%;
+        width: 200px;
+        max-height: 10px;
+        
+          &:hover > ul {
+            display: block;
+          }
+    
+          i {
+            font-size: 35px;
+          }
+    
+          ul {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 80px;
+            width: 100%;
+            background-color: $c-Grey;
+    
+            li {
+              padding: 20px 0;
+              text-align: center;
+    
+              a {
+                color: $c-Orange3;
+                font-weight: bold;
+              }
+    
+              &:nth-child(even) {
+                background-color: lighten($c-BlackT, 3%);
+              }
+           }
+      }
+   }
 
     .h1 {
       font-size: 250%;
